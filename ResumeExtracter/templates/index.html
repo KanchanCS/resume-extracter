@@ -1,0 +1,17 @@
+<!-- upload_resume.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Upload Resumes</title>
+  </head>
+  <body>
+    <h2>Upload Resumes</h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
